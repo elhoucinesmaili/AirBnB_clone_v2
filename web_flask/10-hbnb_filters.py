@@ -1,13 +1,12 @@
-#!/usr/bin/python3
-"""Flask web application that serves the HBnB filters page.
-
+#!/usr/bin/env python3
+"""Flask web application for HBnB.
 The application listens on 0.0.0.0, port 5000.
 Routes:
-    /hbnb_filters: Displays the HBnB filters HTML page.
+    /hbnb_filters: HBnB HTML filters page.
 """
-
 from models import storage
-from flask import Flask, render_template
+from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
